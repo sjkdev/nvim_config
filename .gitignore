@@ -3,3 +3,5 @@ initbakup.vim
 package.json
 package-lock.json
 yarn.lock
+.eslintrc.js
+.netrwhist
