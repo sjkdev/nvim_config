@@ -180,7 +180,17 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'rainglow/vim'
 
+Plug 'OmniSharp/omnisharp-vim'
+
+Plug 'posva/vim-vue'
+
 call plug#end()
+
+" for c#/ omnisharp pluign
+let g:OmniSharp_server_stdio = 1
+
+" syntax for BufWrite/ read etc
+au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md,*.jsx,*.java,*.css,*.scss,*.sass
 
 "" jedi vim
 " disable autocompletion, cause we use deoplete for completion
@@ -201,7 +211,7 @@ set background=dark " use dark mode
 " set background=light " uncomment to use light mode
 
 " emmet vim
-let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_leader_key='<C-z>'
 let g:user_emmet_settings = {
   \  'javascript.jsx' : {
     \      'extends' : 'jsx',
@@ -252,6 +262,7 @@ nmap <leader>, :NERDTreeToggle<cr>
 
 " vim jsx
 let g:jsx_ext_required = 1
+let g:jsx_pragma_required = 1
 
 " pangloss
 let g:javascript_plugin_jsdoc = 1
@@ -271,6 +282,12 @@ let g:javascript_conceal_noarg_arrow_function = "🞅"
 let g:javascript_conceal_underscore_arrow_function = "🞅"
 
 set conceallevel=1
+
+" set tab spaces
+set tabstop=2 shiftwidth=2 expandtab
+
+" set mous position
+set mouse=a
 
 "ultisnips
 
@@ -296,11 +313,11 @@ map <F3> <Esc>:set guifont=*<CR>
 " terminal color
 set termguicolors
 syntax enable
-colorscheme monokai
+" colorscheme monokai
 " colorscheme molokai
 " colorscheme NeoSolarized
 " colorscheme tequila-sunrise
 " colorscheme vimatomdark
-
+colorscheme edge
 
 
