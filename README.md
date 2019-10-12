@@ -7,5 +7,5 @@
 - clone this repo "git clone https://github.com/seanjamesking/nvim_config.git nvim"
 - Read through the init.vim file to learn what the keybindings are and tweak them to your own liking
 - Leader key set to space bar, ie opening/ toggling nerdtree \<leader> , 
-- Ultisnips/ react completion rcc \<tab>
-- Refer to init.vim for more details on plugins and keybindings
+- Ultisnips/ react completion rcc \<C-a> (ctrl aa)
+- Again, please refer to init.vim file for more details on plugins and keybindings
