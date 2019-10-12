@@ -1,7 +1,7 @@
 
 # My nvim config
 - install neovim on your machine
-- make sure you have yarn install on your machine
+- make sure you have yarn installed on your machine (required for certain plugins)
 - install vim-plug (recommended)
 - backup your initial nvim folder eg "mv nvim/ nvimbakup/"
 - clone this repo "git clone https://github.com/seanjamesking/nvim_config.git nvim"
