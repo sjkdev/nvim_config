@@ -59,8 +59,9 @@ Plug 'epilande/vim-react-snippets', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
-
-" Plug 'mlaursen/vim-react-snippets'
+" vue snippets 
+Plug 'FuDesign2008/vue-snippets.vim'
+Plug 'mlaursen/vim-react-snippets'
 Plug 'tpope/vim-surround'
 " Display indention levels with vertical lines
 Plug 'Yggdroot/indentLine'
@@ -159,7 +160,35 @@ Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'Rigellute/rigel'
 Plug 'mxw/vim-jsx'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+" cocvim
+" Use release branch
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" cocvim config
+"
+"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : 
+                                           \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<tab>'
+"
+"
+
+"
+""
 
 
 
