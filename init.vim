@@ -47,14 +47,15 @@ Plug 'tpope/vim-fugitive'
 " SCSS syntax highlighting
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 " Markdown syntax highlighting
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+" Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 " Plug 'gabrielelana/vim-markdown'
 " Enable repeating supported plugin maps
 Plug 'tpope/vim-repeat'
 " ES2015 code snippets
 Plug 'epilande/vim-es2015-snippets', { 'for': ['javascript', 'javascript.jsx'] }
 " React code snippets
-Plug 'epilande/vim-react-snippets', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'epilande/vim-react-snippets', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mlaursen/vim-react-snippets'
 " Track the engine.
 Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
@@ -78,7 +79,7 @@ Plug 'easymotion/vim-easymotion'
 " Shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
 " Instant Markdown previews
-Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
+" Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
 " Jade syntax highlighting
 " Plug 'digitaltoad/vim-pug', { 'for': ['jade', 'pug'] }
 " Javascript indentation and syntax support
@@ -152,6 +153,7 @@ Plug 'prettier/vim-prettier', {
     \ 'html',
     \ 'swift' ] }
 
+Plug 'sudar/vim-wordpress-snippets'
 Plug 'ayu-theme/ayu-vim'
 Plug 'matveyt/vim-modest'
 Plug 'crusoexia/vim-monokai'
@@ -428,6 +430,14 @@ syntax sync minlines=10000
 
 " set wrap on buffer window
 set wrap linebreak nolist
+
+
+
+"-----------------------------
+"    make custom snippets
+"_____________________________
+
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/custom_snippets']
 
 set termguicolors
 syntax enable
