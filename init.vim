@@ -14,15 +14,15 @@ Plug 'cj/vim-webdevicons'
 " Command-line fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-if has('nvim')
+" if has('nvim')
   " Asynchronous completion for neovim
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
+ " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
   " Tern-based JavaScript editing support
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
-else
+  " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
+"else
   " Code completion
   Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-endif
+"endif
 " Emmet for vim
 Plug 'mattn/emmet-vim'
 " Code search and view tool
@@ -52,7 +52,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 " Enable repeating supported plugin maps
 Plug 'tpope/vim-repeat'
 " ES2015 code snippets
-Plug 'epilande/vim-es2015-snippets', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'epilande/vim-es2015-snippets', { 'for': ['javascript', 'javascript.jsx'] }
 " React code snippets
 " Plug 'epilande/vim-react-snippets', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mlaursen/vim-react-snippets'
@@ -98,7 +98,7 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascri
 " Block comments based on a function signature
 Plug 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'javascript.jsx'] }
 " Syntax for styled-components
-Plug 'fleischie/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'fleischie/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
 " Sublime Text style multiple selections
 Plug 'terryma/vim-multiple-cursors'
 " Seamless navigation between tmux panes and vim splits
